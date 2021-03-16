@@ -9,7 +9,7 @@ nav ul, footer ul {
     font-weight: bold;
 }
 nav ul li, footer ul li {
-    display: inline-block;
+    display: inline;
     margin-right: 20px;
 }
 a {
@@ -34,6 +34,9 @@ footer {
 }
 
 ul.posts { 
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
