@@ -4,7 +4,7 @@ body {
 }
 nav ul, footer ul {
     list-style-type:none;
-    display:flex;
+    display:table;
     justify-content: left;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -12,7 +12,7 @@ nav ul, footer ul {
     font-weight: bold;
 }
 nav ul li, footer ul li {
-    display: list-item;
+    display: inline-block;
     margin-right: 20px;
 }
 a {
