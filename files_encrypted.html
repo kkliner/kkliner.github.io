@@ -5,8 +5,11 @@ staticrypt files.html password_here -t "Encrypted Page" -i "Please provide authe
 -->
 
 <html class="staticrypt-html">
+
 <head>
-    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+
+<meta charset="utf-8">
     <title>Encrypted Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -91,7 +94,7 @@ staticrypt files.html password_here -t "Encrypted Page" -i "Please provide authe
             font-size: 1.5em;
         }
 
-        .staticrypt-footer {
+        /*.staticrypt-footer {
             position: fixed;
             height: 20px;
             font-size: 16px;
@@ -100,7 +103,7 @@ staticrypt files.html password_here -t "Encrypted Page" -i "Please provide authe
             left: 0;
             right: 0;
             margin-bottom: 0;
-        }
+        }*/
 
         .staticrypt-footer p {
             margin: 2px;
@@ -115,6 +118,24 @@ staticrypt files.html password_here -t "Encrypted Page" -i "Please provide authe
 </head>
 
 <body class="staticrypt-body">
+
+	<nav>
+		<ul>
+			<li><a href="../">Home</a></li>
+			<li><a href="../projects">Projects</a></li>
+			<li><a href="../files_encrypted">Files</a></li>
+			<li><a href="../donate">Donate</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="blurb">
+			<h1>Files</h1>
+				<p>A collection of Kevin's files. Hopefully he gave you the password to download things.</p>
+				<p></p>
+		</div>
+	</div>
+
 <div class="staticrypt-page">
     <div class="staticrypt-form">
         <div class="staticrypt-instructions">
@@ -138,6 +159,10 @@ staticrypt files.html password_here -t "Encrypted Page" -i "Please provide authe
 </div>
 <footer class="staticrypt-footer">
     <!-- <p class="pull-right">Created with <a href="https://robinmoisson.github.io/staticrypt">StatiCrypt</a></p> -->
+		<ul>
+			<li style="display:left; padding: 7px 0px 0px 0px"><a href="mailto:kl1ner@outlook.com">Email</a></li>
+			<li><a href="https://github.com/kkliner">GitHub: kkliner</a></li>
+		</ul>
 </footer>
 
 
@@ -175,7 +200,7 @@ staticrypt files.html password_here -t "Encrypted Page" -i "Please provide authe
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = '4a77d8b050698bb802ed3776c337d7b6656c25a20bb7b66ea70fdf2f1c8fb7f67610dfdbf3c1620d985479ec69f00e2c8f9fa455288569aee78e7ce6c69a4101iO2EvWDc8qhEw15qFSw9SJ+LZ7sZAdDpg0u2Hxv+DT4PcwergiIP28Ct0yMzjiq/B6TRX6TiFuC45CfbePRjE7ueaArv2r4aBH7K/IvO/5Nxd1X2ycm9MnkcbPjYMVdBth4vhsNBG2iaRMDKKTJgJgjdBFfEQ/y3CkFgqoa6gtBrlqHISzBKnlZWniRiw7rLIdYssEWjGhnPZN5BjJ1RDMVjRaDbY/qwWeE5TUNq6wZBQPsh2AFmebnMtgrsO/UUkclXpjNhkVbHgVyvFgW9OTPyykQCFTW0GFpcCoe8x9IqJjpEimURLNJVKuWd5DtP4NJbJ0cKLugghAblj7NdrS5l1XQuzxzOl3gKKbeCx+OD6Rvs9YTxeADhPCHe7sUYiIZoHaSQ72zFD/adP04sgu2SruvSxvoXo9yvTQTlBJSFlXOqweFqNyef0QT+BA6uF8ORZ6kqXd8pSy9Mlc7/cHWVvaQLjtu76ZGgqeI093F46xCoaO/OVEZKqmb8SZ0kPD8U5uNmRgfyZQj4IYFTq5hvz86vpmA9THS9rNgI4qkttbME1XN4CROM70CjDorpeCk+1lx/CHqtVdvXaDlgkk99NONiYw6l7+ZkPuzLhwdbC5Ih6FOt60fdbbuKsxHswPKTjfn1bioTSmNY9QSe5Xxoj0mG8NVEfCKmFjNRZG4i0Ah6yDCTv1G8keuWGEGY2dfOSKx8POkpUMWiTUVkFV3RHFTMKHPa83j9n6wQlzKTlGXGrPGTU3GU12LQJQSRGm7+jVgr1355mBuZ5G23KwV/PIseLqJKuARXMnftCPNNuES4iCK336/wVmSMx8tHczYBUb7uQjqxNgYvTEgCeGdnulN2AyxiCpv0nQfTaadUdVK0wnhS985D9hgHMuDpFcNgSpmw5cPsRYgomWyzeHiDCJdnxedwerhyTSU7w5CeCQpfC5IDbdZOcywkN6JxCtWPFhVEFsJw6nj0lLP/7eftR8OepeS5mEi7nTdVwghc1CM/xq8udK3Nr3uQF8ZCvMgj7Uuuix7FjCDGwkrS29vBZwKmIstB8y41nrXRWPuwvmqpdxnvGN7xc00RjY01UiXwZEfnDTirAu2eKTMmsKK8bBRPvEW1Ev8zryODeXjP943/6uoQEWI7l+pOlM6seMUIHjDWeh6yZ5EacZYR/dlMBrzMd8Es+RX/A/SP5YoFRTh8cDZPpD9xdvOYjUS4DgOCHo8c8Dq0AyakdsJ1pGzy9zIVNfJGeBrv1kdgyNpTcHPhUVnFoCRXLaIMPc3fVYg9LyTqub+yPbysB6vLdQ==',
+            encryptedMsg = '8f2707ec07765ce1bbdc04fddad073e7291fde7bb66f791798a08ce280ed95094ea09bf9ee853b83d73efa55f82b2a75cc5dc5b03d3ce9973bc9aa4945a56c44YB/q3tbbsWyEe3CMednf9L3IaIU6RJGt0OZp3ii2S1hPUn9ALrBM63lhSK7Wh5JtkOLowKyMJGI40+BNPOeSwX9aktoK62g1GrVxvKiX328RlVYLslbxLynGv+5d70Zaz2LkyLaIIpse2pPAlzSmerOSHFZB8xX2tqyVurNZe9hJ9zZnJZe8UcQ9249idXcCRhScwkG+5q10lPkWcnPI8NrAKbNTGj1n7BiHc3tDw9MtkLXn0pIst1+4ifw+1Qj1HCm+Zh1UjuHD/3iIO/ghKivlkSIOogIQAROFypUprBNXeOMyHorQ9hMdPHr06D0DsL/Du1Dtj7gml8GVJKPFfUF06CgYSrwXW/3sun32is3SBCnpH1Bj/thP5jAd/+bSXzelhpNGPqR8pY/7RF9sNT2s8FaARuFCS1ERXeyQ8lSoTt9/6zeoJ1RTYREqX/ktY8G1LHaZ7zvXIQmY9YtwkK1Apy5LSRmvizc08IfyIMibXgDuvR2o85PWxYmT4JZopCPFeQlWKzSNz2LY97SzhL8wkBhqSYfyC+wlUSG3K1AfWMJVYc62hBxj7pi1hJtG5QlB+X+Zda08A4pgI/DpPGTIn6k89UtHGA5NK1tMbynchII2dz9m5h3XcIHySMK3NoZSfcwT1KW2r1/FzvPSPMc2r63ECVFcIgsh/2A7qfmjfrscPiqu1sgKGvi6hlN0HTPvAu7hewVS1zB0C3oFZfcOttrhVwIuCUts7wOE0e42sD7mu/IJZJl3P7aiWGGzKaKXSjw4o8vrV1QxbpC6mU6asEeQSerwcMD7G9ytAYfyXQAhuMvslEgB/zEG2AiQoMajTvakwUCl7pTT53jce9Ro8yXmw+HQoZi5wR8ZcyMPwI87XInn+CYGvPx7a/XWxb5VdQX+5c/TciGndMxhO694OruL4R8QGOtv+jTx6F2k+1xh2o+Nh2MLsLXrFIf+l0sxeRB7HANG4oEzjR4IrAuAKfbfZKaeEM5jIJu0wmBymm8A1sK/S4Emi42S4U1Ewc3SOIgdyKMx9UGL/J0XZF1Nybf0IONMDgKLnDs9UrzbytNqO0oD7NGzkoXHK7K14C4jhBF3JoqhOTtJZi+pEU/MbqgBni2HPo1NvsFcbWnoeGTUPIg91hCWOOhBR78+iWYTvtfQ6b/9SHTma/CLrRt2XoOtzBMlEPlXXAu6aeoiqxyyAZ0vF4S5o1CohDYuj6/iZlPeXVJvh5AaKK33a4t3ciQJyIXCp2BnFalBDKJhAyvK/yWvvNSIBH+nxPuT/EATUhlRAd+WPRvRSXzKDg==',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
