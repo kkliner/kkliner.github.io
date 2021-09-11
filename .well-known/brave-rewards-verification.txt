@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: kl1ner.com
-Token: d7dd3fc97aca5dc0d3b40a3bd4ba4fdc6056adf61ae6ac0d514d7c7531da6214
