@@ -1,7 +1,7 @@
 <!doctype html>
 
 <!-- NPM Command to generate encrypted file:
-staticrypt files.html password_here -t "Encrypted Page" -i "Please provide authentication." -f password_template.html
+staticrypt files.html password_here -t "Encrypted Files" -i "Please provide authentication." -f password_template.html
 -->
 
 <html class="staticrypt-html">
@@ -10,7 +10,7 @@ staticrypt files.html password_here -t "Encrypted Page" -i "Please provide authe
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 
 <meta charset="utf-8">
-    <title>Encrypted Files</title>
+    <title>Encrypted Files</title> <!-- Changing this does not work, use CLI option -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- do not cache this page -->
@@ -200,7 +200,7 @@ staticrypt files.html password_here -t "Encrypted Page" -i "Please provide authe
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = 'adb641055499a14c53b4e498913745918ebba952b44087635c9b66e1f9f84782f842b8597d3ac03712d576b6c4c34431e295232cb8b4e7b91305343fbd15158elD4M0EqNcxMm/QEww12Z62V8i/bXk4qvpTwYTyAY5xFvh8WDDIPNiZ1aveovHb+URKVncn9ZXNG1sVzTRUdyOPdZ9If6978qucnJOR5uqwdlm/A0jQOzZX9Au/ai4cSMAmfVItdJIZ8d/rBsV0bZwZ5FA6ugOWzqk86OfLTH35yaDFcHWbTEx7g0IUt3h6cW1CaQTnfopksloBAHbgi+s2gkgANoiH4IvCiFQgeL5bpnTylYGAGhBKlGW5r8wCpiBirEQi6F53q+JxtLtnN4VIu6v7AtXccd/1n8/xMYaxyXaweYQQnehEZP166d75ViH97HQY/NtXm0RGH9XCzqDc86o1BUjRK9V5WND77clOCWT+1FBkPWunrCBsSDixDHeJegw+nYHLAZuLfOuimvLdLHjrfrDDZ5KM2NZ+TuBmufGz55f8egCXvABw56WXDNNxrrtXx0yidSIx4BYDMzgESUr+O6DbjJWToG4SqWw/BSwxMxHcqUJmtKn7OCARp4kTDpklxfRuXhHu/LBKerLv78eskkjTsExp27OYIWzK5ryrHlxsFDsNUkgWQOwsnOMibgF774RSYC2kFfmrmvLXVLIaWj7V+/vVMD0hO6pz1G2PNsrJDhLQYYE4WzXN0uw7KrA3KQHq9OH5OcMgRZyn9dY+P2tj4oDWanuKP1Y3yuyzPCS7+pFJA8KlOi70kI1figoeCLP/2e9jv5DtNm7/uQ5p6s36ISZ5sqRyEu4qpwMkT0A9EUgMMvId8D38DGnufwcsEbtHR3m4CbU+eeK2DkVErSvqHRV0e+esQgswvD2sboeG+A03GHzAocrX6mcAi9S6czBWvw2ldQPzcWBAF3DSfYRBCCXTkvlj4Yv6vgO0vy1dmaShQ1Fz4akiItdhcjqkKCllLFAAKGZhOoZk4c1wjcl39vbddVB0HrZnDicg5u6bPeg+qT+xqVe+8FyvHPvLA8Yvvjjeez6H++bWafnT3pTqqAhM+k4Abfz8FdX92bWs9fuDx5YXTnEKh/Y21BGohre2FOkEKs6dUPmKGo19tXMDs5k1X7nymsRPCfKPsCPAX2fgsYeusRNnrTQPbo42ff6cRRmfL88XcC5X+eFpsSHfkuHirIkcuMjjNjf41ueoEIvd/ZAcaoW6/VQ8AIRp98Ucbsi8XN4XAq/wzC8DQwuox6VKNkl3ukhtrGM51jAppYr6teDLuZKe1k0X1NTu30wlbgOC8WnaUI3qQqQZriku/QeXL02jTpcNqAjU+ZUAB3lCzKj9bGMmHRTshQrd1Vt6Q6vaVmCfslEQ==',
+            encryptedMsg = '7c6a32337db24ba728c84218d0416cf00b3ec6ae6673683b13a5b053778cefc80d51a0a1b7e61309ab10c316ef21fd4698fb740fa689f09731bc437300c6ea296INtn3S509nzBk2Nai2pvLfCTr9L9d+kMSB8ZmAQARriPVicXLLqWT11N796JwdW/DhEKC2wzE/ph8mQb6XPYkX+WdyMZSW5FW9b5YeeQzwZe+jS33E4nruNItsrr6hI8rqGRM6drZODL7MY4ZSbJ8PmmM8Je0xNXZlgUbbCnKyE2aDA0Duko5vIC6q45GWmaPRrCOUtPfi4ZklOKX5ZAuS/meZMiM6F0k8TmMyd+dR5OjkTQ3p1R/eXCB1Ett0iHkk09LaDL9BhjidoVh6xsSP6uNOycf/DSc9CGsjcipm46RoomnkMRK2b/EQwggPuY2bhSQ1z6vEsyb+3LSbIM8ArBqRbfyJlpmc1YWALX1MwhiudbOQMDsVnGgrB8ub6hRUy3IqpEgc6JM8kLYyGGvg0gqVKG13+U5rS9r2vzZTwNYw/gAKI+EOl7fxOsi1UgJsU/KVgdJX6fQpJUdZrsUhG6+eomqXYgx1/+hmtsSOWUoM2mkCVntchJRYtJRMr2yd/2VcFfY51ysx6yNOtLwcET++3ydRBsqcn71ePBa22ZiLMdFfZZq7uXXLm289Rc355pqcrJ/0MdxxBtjoqaXtiovhKGn37b/L3orABUE6Eum06o/DjvFHR+iBtJ90Mn70FzZ8FtXB5VU0DlOiwQ99rxpcEu/ZeLwV59ltIeXo2jB3LyLu25kyPO5zdeF2nbgoxmFpbvg8198Inhza7mFitVaE31JesTtc/Q3yb/pRZ0wPyQ4K618hsQY1VoVgjAJnNGlUcUGtX+AK9u4WbyX/LLiBTA88crXLwyQiQXNB1IV6tOTaR/4PAEaxPM1M+aDB9HVsvKgw8yIlS4ZdELUb7Yz7QC3X66on5pxNv54SRtrDgKzoqszU79gtb4pNLn2fblWUvC+2nvVvkaXI4tvndzA0Jxd2xABBuVCJ7m7Ylxa6uwOD8o/Es0KZ913G/x2kF7C9xvxY1irCxeygHYNLYv5zjb0bn/1gBOIZ/b3RCU0sR714x8UMvAIUzetqOQAHARQQSwxfOEnF+OejiFDw1+HnUScsIZimD4f4ucHGHLFUbwndTyq3YE7PkIqjX8tSKn/gwetwXfvVW9XkiWX7wSJvV95gU2SMhhssowITVEyPb3iozrEM+3iyNcohUFT6BSZJjC8Knqs7X/XgEmltZsaX3LZS4yVVnERItQ+mGUgTi5oaiiBgpkDV7ry8/xlpWeWolfir+UlrRD+hrsJBAeDktirqgHsCmrhS5gsNrogJr5+NT+AsAqbdoU3Ze',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
