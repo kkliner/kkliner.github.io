@@ -1,4 +1,9 @@
 <!doctype html>
+
+<!-- NPM Command to generate encrypted file:
+staticrypt files.html password_here -t "Encrypted Page" -i "Please provide authentication." -f password_template.html
+-->
+
 <html class="staticrypt-html">
 <head>
     <meta charset="utf-8">
@@ -62,7 +67,7 @@
         }
 
         .staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus {
-            background: #c5c5c5; /*Decrypt button hover color*/
+            background: #d2d2d2; /*Decrypt button hover color*/
         }
 
         .staticrypt-html {
@@ -132,7 +137,7 @@
 
 </div>
 <footer class="staticrypt-footer">
-    <p class="pull-right">Created with <a href="https://robinmoisson.github.io/staticrypt">StatiCrypt</a></p>
+    <!-- <p class="pull-right">Created with <a href="https://robinmoisson.github.io/staticrypt">StatiCrypt</a></p> -->
 </footer>
 
 
@@ -170,7 +175,7 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = '23c07896527b6ad3811f5c6d694af45800495a2481215936cdd7517bbff788c291d812a7e0c837471ee643b9e836818eb95c92fc94318d8a84ecf3a8d463f7d6KdzOGYfDUQgnWDV6X93eKUxyeATW7zoamuLCwZlKBCwJXuLIl/vjM/wr/8cpOVXTjjs0vYrrwQw4CSBT8sIoBjEwkkWh/zQeOMHyjkskxnGhMsY/Lg6YkfUYIgy4dtGYlykKs+P6JBAzSmMbFbbsEXYcA4JCO3zA284citCQKO4Rhl39XwOnPoe28+t8N2ymnaoku3JdKmPeNQNVq9evIpaCaBQnqCVzYkOVDknNjnwGMsz6UN6CAPBmXLrSgLmmZWOU5HXE71FdFdhYChIKCmB/NDNwxLQ6U3hTCSbQwftI9rmG714+LV8RxCc4t8yCxUSExVrUJc1L1MVMGiVMHNzqFODJgneYE9sbvUekiyaF2wgwifQ/BwgWp4NQiBRTIvTKyq7X9JkQ/D6W7fk2N8VXDnU5DMGbhueu4QX9vlXLGdfhlVl4p2A8M8npS9m1ODk6hx+fLx92OkF61PbFB0Hof2UPx/zgS9pJ06Z9mJHT3MjnTsWv1C0obrzStmZ0/9wUw66jUlZGNSlysvPFS8dUxSfW5HViqH+k9sN/nt4ocRQwTaohFbUeumOCcHKAC9kAQpv37OGWTorVwCSRgrWdbg8zW1UPGtDqVhOOCxXTOaLSqjBagLWz1cwTvVBehl1qfbYGCArRAlgK8PW0e4owmw8L7Q5zCgq+8PeBBeyK2yy6MmBELxsvB/vng3YoqkBUXHH0yPiiRuq2BK7orVAZXtkYfpKvWbGfKDdUz8trTd4ymZD0PB3MyUFiD0/s5ys4oMf/VXC5o5OBLByCeHt1MUbjmVPwIOCvFzD4RhsMFoJAFHYplIbctKGsfgCxZVMgwHUeCs7P/Uwt1f/nZGizHUdsrPjTULtv8Wsv2RW8TFDXErGFDONu4njGQHUib6OXKtDPomDFvUbMAhpA3cQoweTx5ngG94p2qt8XcaL8ll7adpvloDj4C5eNvB+1mzzhRcDrDYZcY3CHglPPNS1Vo4GwdrVNk85IIGhiD+IXoaD489pmGB6ZN8fYJccxjuNZsW7lP2v9xozCauRr2szLuc2qQwMxGiJXN7yvbyOEyaUP6w6u+rwORMMOGatPB1ylEvbe687d+diDwxLFd6ABtb3dhHwUxUX6X6kWusScO8IiTe0Gq7cKLN6Kcc/lUUCAlBBYGQFqjwsl1OB+VqlxezDxUayOTOTI4Gi2yd6eU76vaLPsL2FLwYTbuMhOWTCKmyp36rCMoifz+MYULg==',
+            encryptedMsg = 'd28809fc3b787bd6b7880df1345d0483422d3d820809672d1601e56b804a7015a6aab96aea58672e43b33f7773bb91bb08559162663350c9e72d3dd6ee1b3d9bgWroDLNedALKQwgcrylaZaTAUaRJg9JQJRvbL7BudnHu4CqC6MOgv20thVSnJcBCyxGTcwHkzH20jtTv+h1xCao5y0SwzavNTYwFwkcKJmWMNJnXBVofGyPUW1NbC+BhoJ/guMC8upi6iqFI2kgTb8aLA2RtUx6yqvWoMrXEfi/D8z8wU1FRHC0QDNjBxgJr4w2Au4W27PTN33ojHxkYwnxLBqeWuxNTdIZgf2kBRLR/8ufm2+jdWUi4gx78gTTBnHKwM7MAXs2eQ9yeQfJ8u+EnR4b9AlmjubZMWKo7EVP4gLurnve1IHfUDoV8Cyzhdj7c9krijWT1d3THsrGpbNe0ziFDwnmHuWFv4WEZ/gItqY0wRmQvM9CVv1ouNOqQsMks99ZnKDUJhmqziUk5ZVfgdsNDyu4sadg4gW7PcgqWjvmI9ZjTqKWBPOuux/ULe7DAtg0yiJnI+dKYyZzWh7BcyN0qgB3BwP2wCE0SHWFBRBFu2rM35Rw37FitLRyhlAvH1c4hPnG8S9AcNJ8CZD8kvfLx4O/Z6zhINbjoSl31aapoLv4oyV5ZjpB/z/9fnmXA2Dp8W2kp8xiHALmzsiPhofvTPFXfeXuWTGd9UZfbR1AmmctoRNZL+X2G9n64LpEN8W6bFwcDrbGlR2ASrlxvg5SAr441GREtZ8gJcnrbpq6WIWBWBoh+Sd7+nqxLsTHB92/LonTIeDtF8hgarKc+mooInQH9ZGnFhJWuKoutfsrLo3vqdLKEh7NnK5n8FN9fgJmdMpkTQHOpLUDp6oZ1U50i8iI5KJLftGQumuOmc9h6Q4svnXyxKnYuLUfHIw9OD8M1m9hidR6P69eyFrX9P6VI7bdTKY3MGbTo9Xul5IBFS04VmHAu4YEH17o3RGNyx2w12+KCyAdfySgq31VwkAdFzkEq5B2XTB6229a+gIUpa8kl9S20RhuBbw/UAmgcXYYWBeQfhXOnwLJzpEWD/WmpjNRSgSWoNyg09jE8gHO4OLz89ieaR9AnCvL09Ph1upFpsx2IJ4rXM69FmhvQvB6/T7butImexu50OWRBG1iwCKenTkdBEvAhZHNlaXZL6zWFz2HB4lPucA7L17xe32ovoQzAfECpTqg8g6eM0vrpWYU6L3VW1fLNX1DomVhQXbRmhBKe80/blasZuvzEjI78wHoUks27pLDmqRLKdgVPWH7f8y5Uux3NQ2csCUNN4i3o6QmFYqBADkSJCBLKsxs3L573ia+hxHea7hKhKN/EUczUcId1JuwQE9+jAtu1slk8XopFW7knvD0j+s95kI0XNApXpYRVf+b2F+4LWqLKY71abAhv+Bu0Dl0/yPTW5TOZTr2sgbfyCTdXPw==',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
